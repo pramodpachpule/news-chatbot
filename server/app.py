@@ -96,6 +96,5 @@ if __name__ == "__main__":
     # Start server with production-ready settings
     uvicorn.run(
         app,
-        host="0.0.0.0",  # Listen on all interfaces
         reload=True      # Auto-reload during development
     )

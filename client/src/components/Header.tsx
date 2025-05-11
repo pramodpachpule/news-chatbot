@@ -29,7 +29,7 @@ const Header = ({
     setError(null);
     
     try {
-      const response = await fetch(`http://localhost:8000/session/${sessionId}`, {
+      const response = await fetch(`/session/${sessionId}`, {
         method: 'DELETE'
       });
 

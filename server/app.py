@@ -97,6 +97,5 @@ if __name__ == "__main__":
     uvicorn.run(
         app,
         host="0.0.0.0",  # Listen on all interfaces
-        port=8000,       # Default FastAPI port
         reload=True      # Auto-reload during development
     )

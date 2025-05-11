@@ -53,7 +53,7 @@ const Home = () => {
  
   const fetchChatHistory = async (sessionId: string): Promise<void> => {
     try {
-      const response = await fetch(`http://localhost:8000/history/${sessionId}`);
+      const response = await fetch(`/history/${sessionId}`);
       
       if (response.ok) {
         const history: Message[] = await response.json();
